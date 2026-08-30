@@ -5,9 +5,9 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
       </svg>
     ),
-    title: "Web & App Development",
-    description: "Custom websites and applications built to work. Fast, accessible, and designed to bring in customers. So you can focus on what matters.",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind"],
+    title: "AI Enablement",
+    description: "Most teams have tried ChatGPT and stalled. We find where AI actually earns its keep in your business, set it up properly, and get your team using it with confidence. Practical, not hype.",
+    tags: ["Claude", "Agents", "Workflows", "Training"],
   },
   {
     icon: (
@@ -15,9 +15,19 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
       </svg>
     ),
-    title: "System Integrations",
-    description: "Your tools should work together. We build clean, reliable integrations so data flows properly. Your team can actually scale.",
-    tags: ["REST APIs", "Webhooks", "ETL", "Automation"],
+    title: "AI-Assisted Development",
+    description: "We build software with AI in the loop: faster, leaner, and still engineered properly. Custom apps, internal tools, websites, and the AI features inside them.",
+    tags: ["Custom apps", "Internal tools", "Next.js", "LLM integration"],
+  },
+  {
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7M4 7c0-2 1-3 3-3h10c2 0 3 1 3 3M4 7h16M10 11h4" />
+      </svg>
+    ),
+    title: "Integrations & Data",
+    description: "Your tools should talk to each other and your data should be trustworthy. We connect systems, clean up what's broken, and automate the steps in between. It's also the groundwork AI needs.",
+    tags: ["REST APIs", "Automation", "Data Quality", "Migration"],
   },
   {
     icon: (
@@ -26,8 +36,8 @@ const services = [
       </svg>
     ),
     title: "Salesforce Solutions",
-    description: "Salesforce is powerful but easy to get tangled. We fix it, build clean solutions that work, automate the tedious stuff, and help get your team actually using it.",
-    tags: ["Salesforce", "Flows", "LWC", "Apex", "Custom Dev"],
+    description: "Salesforce is powerful but easy to get tangled. We untangle it, build clean solutions that work, automate the tedious stuff, and bring AI into the CRM where it helps rather than where the brochure says.",
+    tags: ["Salesforce", "Flows", "LWC", "Apex", "Agentforce"],
   },
   {
     icon: (
@@ -35,19 +45,9 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
       </svg>
     ),
-    title: "Technical Strategy",
-    description: "Architecture reviews, tech stack decisions, vendor evaluation. Clear thinking on the decisions that matter. Without the consulting overhead.",
-    tags: ["Strategy", "Architecture", "Review", "Vendor eval"],
-  },
-  {
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7M4 7c0-2 1-3 3-3h10c2 0 3 1 3 3M4 7h16M10 11h4" />
-      </svg>
-    ),
-    title: "Data Remediation",
-    description: "Bad data slows you down. We identify what's broken, fix it properly, and put guardrails in place. Your systems stay reliable and work properly.",
-    tags: ["Deduplication", "Data Quality", "Migration", "Salesforce"],
+    title: "AI & Technical Strategy",
+    description: "Where does AI fit? What's worth building, what's worth buying, and which vendor is telling the truth? Clear thinking on the decisions that matter. Without the consulting overhead.",
+    tags: ["AI roadmap", "Architecture", "Review", "Vendor eval"],
   },
   {
     icon: (

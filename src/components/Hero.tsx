@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
 
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight mb-10 leading-[1.08]" style={{ color: "var(--text-primary)" }}>
-          Building <span style={{ color: "var(--accent)" }}>tailored solutions</span>
+          Putting <span style={{ color: "var(--accent)" }}>AI to work</span> in your business,
           <br />
           so you can do what you're <span style={{ color: "var(--accent)" }}>good</span> at.
         </h1>

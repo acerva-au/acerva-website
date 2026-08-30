@@ -10,14 +10,14 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Acerva | Technical Solutions",
+  title: "Acerva | AI Enablement & Development",
   description:
-    "Acerva is a Melbourne-based technical services firm. We build digital products, integrations, and CRM solutions for businesses that care about how things work.",
-  keywords: ["web development", "Salesforce", "API integration", "Melbourne", "tech consulting"],
+    "Acerva is a Melbourne-based consultancy. We help businesses put AI to work, and build the software, integrations and CRM solutions around it.",
+  keywords: ["AI enablement", "AI consulting", "AI development", "automation", "Salesforce", "web development", "Melbourne"],
   openGraph: {
-    title: "Acerva | Technical Solutions",
+    title: "Acerva | AI Enablement & Development",
     description:
-      "Melbourne-based technical services. Web development, system integrations, CRM, and consulting.",
+      "Melbourne-based consultancy. AI enablement, AI-assisted development, integrations, CRM, and straight technical advice.",
     type: "website",
   },
 };

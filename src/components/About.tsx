@@ -2,25 +2,25 @@ const steps = [
   {
     num: "01",
     title: "Understand your business",
-    desc: "We start by understanding what you do, how you do it, and what's in the way. Not just the tech.",
+    desc: "We start with what you do, how you do it, and what's in the way. Not the technology. Not the hype.",
   },
   {
     num: "02",
-    title: "Build the right foundation",
-    desc: "We architect and build systems that fit your business. Built to last. Easy to work with.",
+    title: "Find where AI earns its keep",
+    desc: "Some problems want an AI agent. Some want a clean integration. Some want a person. We tell you which, then build it.",
   },
   {
     num: "03",
     title: "You do what you're good at",
-    desc: "Once the foundation is solid, it stops being a problem. Your team can focus on the work that matters.",
+    desc: "Once it's running, it stops being a problem. Your team gets its time back for the work that matters.",
   },
 ];
 
 const stats = [
   { stat: "< 24h", label: "Response time" },
   { stat: "AU", label: "Melbourne-based" },
-  { stat: "Full stack", label: "Technical coverage" },
-  { stat: "No lock-in", label: "You own your code" },
+  { stat: "AI + full stack", label: "Technical coverage" },
+  { stat: "No lock-in", label: "You own your code and your data" },
 ];
 
 export default function About() {
@@ -37,13 +37,13 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
               <p>
-                Acerva is a Melbourne-based technical services firm. We work with teams that need solid technical foundations.
+                Acerva is a Melbourne-based technical consultancy. We help businesses put AI to work, and we build the software and systems around it.
               </p>
               <p>
-                Whether you're building from scratch, modernising existing systems, or connecting the tools you have, we handle the technical work so you can focus on your business. Web development, integrations, CRM, automation. Whatever you need.
+                That means two things. Enablement: finding where AI genuinely helps, setting it up properly, and getting your team using it. And development: building apps, integrations and CRM solutions with AI in the loop, so they arrive faster and still hold up.
               </p>
               <p>
-                We work with teams that care about quality and know what they're doing. No jargon. No bloat. Just solid engineering.
+                We work with teams that care about quality and know what they're doing. No hype. No bloat. Just solid engineering and straight advice.
               </p>
             </div>
 

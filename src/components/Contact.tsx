@@ -64,7 +64,7 @@ export default function Contact() {
               Let's build something together
             </h2>
             <p className="text-sm leading-relaxed mb-10" style={{ color: "var(--text-secondary)" }}>
-              Tell us what you're working on, what's in the way, or what you need to build. We'll get back within one business day.
+              Tell us what you're working on, where you think AI might fit, or what's in the way. We'll get back within one business day.
             </p>
 
             <div className="space-y-4">
@@ -212,7 +212,7 @@ export default function Contact() {
                     rows={5}
                     value={form.message}
                     onChange={set("message")}
-                    placeholder="What are you building? What's holding you back? What would change if your systems just worked?"
+                    placeholder="What are you building? Where could AI help? What would change if your systems just worked?"
                     style={{
                       width: "100%",
                       backgroundColor: "var(--bg-secondary)",
