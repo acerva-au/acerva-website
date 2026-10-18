@@ -25,8 +25,8 @@ export const metadata: Metadata = {
 
 const capabilities = [
   {
-    title: "Build & configure",
-    body: "Flows, Apex, Lightning Web Components, custom objects. Built clean so the next person can follow it.",
+    title: "Development & configuration",
+    body: "Flows, Apex, Lightning Web Components, custom objects. Salesforce developer work, built clean so the next person can follow it.",
   },
   {
     title: "Untangle what drifted",
@@ -39,6 +39,11 @@ const capabilities = [
   {
     title: "AI in the CRM",
     body: "Agentforce and LLM features where they genuinely help, rather than where the brochure says.",
+  },
+  {
+    title: "Admin support",
+    body: "Ongoing Salesforce admin without the headcount. User management, day-to-day changes, data hygiene.",
+    href: "/salesforce/admin-support",
   },
 ];
 
@@ -60,7 +65,8 @@ export default function SalesforcePage() {
             </h1>
             <p className="text-lg leading-relaxed mb-10" style={{ color: "var(--text-secondary)" }}>
               Salesforce is powerful but easy to get tangled. We untangle it, build clean solutions that
-              work, automate the tedious stuff, and bring AI into the CRM where it helps.
+              work, automate the tedious stuff, and bring AI into the CRM where it helps. Consultant,
+              developer and admin support from one place — whichever the job actually needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -106,6 +112,15 @@ export default function SalesforcePage() {
                   <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
                     {c.body}
                   </p>
+                  {"href" in c && c.href && (
+                    <Link
+                      href={c.href}
+                      className="inline-block text-sm font-medium mt-4"
+                      style={{ color: "var(--accent)" }}
+                    >
+                      More on admin support →
+                    </Link>
+                  )}
                 </div>
               ))}
             </div>
