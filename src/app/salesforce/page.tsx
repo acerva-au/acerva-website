@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Nav from "@/components/Nav";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -76,6 +77,13 @@ export default function SalesforcePage() {
               >
                 Just need a small fix?
               </a>
+              <Link
+                href="/salesforce/training"
+                className="font-medium px-7 py-3 rounded-lg text-center"
+                style={{ color: "var(--text-primary)", border: "1px solid var(--border-light)" }}
+              >
+                Training
+              </Link>
             </div>
           </div>
         </section>
