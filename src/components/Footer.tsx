@@ -1,8 +1,9 @@
+import Link from "next/link";
 const footerLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#work", label: "Work" },
-  { href: "#about", label: "About" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#services", label: "Services" },
+  { href: "/#work", label: "Work" },
+  { href: "/#about", label: "About" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Footer() {
@@ -28,14 +29,14 @@ export default function Footer() {
             </p>
             <nav className="flex flex-col gap-2">
               {footerLinks.map((l) => (
-                <a
+                <Link
                   key={l.href}
                   href={l.href}
                   className="text-xs transition-colors duration-200 hover:opacity-80"
                   style={{ color: "var(--text-tertiary)" }}
                 >
                   {l.label}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>

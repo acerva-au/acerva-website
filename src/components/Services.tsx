@@ -1,3 +1,4 @@
+import Link from "next/link";
 const services = [
   {
     icon: (
@@ -58,7 +59,7 @@ const services = [
     title: "Quick Fixes",
     description: "Smaller problems need solving too. A broken form, a misconfigured field, a script that needs tweaking. Fast turnaround on scoped work.",
     tags: ["Ad Hoc", "One-off", "Small scope"],
-    cta: { label: "Send us the details", href: "#contact" },
+    cta: { label: "Send us the details", href: "/#contact" },
   },
 ];
 
@@ -116,7 +117,7 @@ export default function Services() {
                 ))}
               </div>
               {"cta" in s && s.cta && (
-                <a
+                <Link
                   href={s.cta.href}
                   className="self-start text-sm font-medium px-4 py-2 rounded-lg transition-colors duration-200"
                   style={{
@@ -125,7 +126,7 @@ export default function Services() {
                   }}
                 >
                   {s.cta.label} →
-                </a>
+                </Link>
               )}
             </div>
           ))}

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -28,20 +29,20 @@ export default function Hero() {
         </h1>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             className="font-medium px-8 py-3.5 rounded-lg transition-colors duration-200 text-base"
             style={{ backgroundColor: "var(--accent)", color: "#1b3a2b" }}
           >
             Let's build
-          </a>
-          <a
-            href="#work"
+          </Link>
+          <Link
+            href="/#work"
             className="font-medium px-8 py-3.5 rounded-lg transition-colors duration-200 text-base"
             style={{ border: "1px solid var(--border)", color: "var(--text-secondary)" }}
           >
             See our work →
-          </a>
+          </Link>
         </div>
 
         <button

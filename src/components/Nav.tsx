@@ -2,11 +2,15 @@
 
 import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
+import Link from "next/link";
 
+// Absolute, not bare "#anchors": these have to work from sub-pages too,
+// where a bare hash would just jump nowhere on the wrong page.
 const links = [
-  { href: "#services", label: "Services" },
-  { href: "#work", label: "Work" },
-  { href: "#about", label: "About" },
+  { href: "/salesforce", label: "Salesforce" },
+  { href: "/#services", label: "Services" },
+  { href: "/#work", label: "Work" },
+  { href: "/#about", label: "About" },
 ];
 
 export default function Nav() {
@@ -32,31 +36,31 @@ export default function Nav() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a
-            href="#"
+          <Link
+            href="/"
             className="font-semibold text-base tracking-widest uppercase"
             style={{ color: isScrolled ? "#f1f5f3" : "var(--text-primary)" }}
           >
             Acerva
-          </a>
+          </Link>
 
           <nav className="hidden md:flex items-center gap-8">
             {links.map((l) => (
-              <a
+              <Link
                 key={l.href}
                 href={l.href}
                 className="text-sm transition-colors duration-200 hover:opacity-80"
                 style={{ color: isScrolled ? "#e8eae7" : "var(--text-secondary)" }}
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
             <ThemeToggle />
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               className="text-sm font-medium px-5 py-2 rounded-lg transition-colors duration-200"
               style={{
                 backgroundColor: "var(--accent)",
@@ -64,7 +68,7 @@ export default function Nav() {
               }}
             >
               Get in touch
-            </a>
+            </Link>
           </div>
 
           <button
@@ -96,7 +100,7 @@ export default function Nav() {
       >
         <div className="px-4 py-4 space-y-1">
           {links.map((l) => (
-            <a
+            <Link
               key={l.href}
               href={l.href}
               onClick={close}
@@ -107,10 +111,10 @@ export default function Nav() {
               }}
             >
               {l.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             onClick={close}
             className="block text-center py-3 rounded-lg mt-3 text-sm font-medium transition-colors"
             style={{
@@ -119,7 +123,7 @@ export default function Nav() {
             }}
           >
             Get in touch
-          </a>
+          </Link>
         </div>
       </div>
     </header>

@@ -10,7 +10,7 @@ const geist = Geist({
   subsets: ["latin"],
 });
 
-const TITLE = "Acerva | AI Enablement & Development";
+const TITLE = "Acerva | AI Enablement & Salesforce Consulting, Melbourne";
 const DESCRIPTION =
   "Acerva is a Melbourne-based consultancy. We help businesses put AI to work, and build the software, integrations and CRM solutions around it.";
 
