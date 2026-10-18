@@ -25,15 +25,15 @@ export default async function Image() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          padding: "80px 90px",
+          padding: "72px 80px",
           backgroundColor: "#1b3a2b",
           color: "#f1f5f3",
         }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={logoSrc} alt="" width={236} height={128} />
+        <img src={logoSrc} alt="" width={200} height={108} />
 
-        <div style={{ display: "flex", flexWrap: "wrap", fontSize: 68, lineHeight: 1.15 }}>
+        <div style={{ display: "flex", flexWrap: "wrap", fontSize: 56, lineHeight: 1.18 }}>
           <span>Putting&nbsp;</span>
           <span style={{ color: "#d97706" }}>AI to work&nbsp;</span>
           <span>in your business,&nbsp;</span>
@@ -42,7 +42,7 @@ export default async function Image() {
           <span>at.</span>
         </div>
 
-        <div style={{ fontSize: 28, color: "#c4ccc8" }}>
+        <div style={{ fontSize: 26, color: "#c4ccc8" }}>
           Systems · Tools · Content · Results — Melbourne
         </div>
       </div>
