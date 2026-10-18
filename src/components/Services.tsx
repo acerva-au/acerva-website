@@ -23,6 +23,17 @@ const services = [
   {
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zm3 10l3-4 3 4 2-2 3 4M8.5 9a1 1 0 100-2 1 1 0 000 2z" />
+      </svg>
+    ),
+    title: "Generative Media",
+    description: "Image and video made with generative AI, for brand, product and campaign work. Including the pipeline to produce it repeatedly, not just a one-off.",
+    tags: ["Image", "Video", "Brand assets", "Pipelines"],
+    cta: { label: "See what we do", href: "/generative-ai" },
+  },
+  {
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7M4 7c0-2 1-3 3-3h10c2 0 3 1 3 3M4 7h16M10 11h4" />
       </svg>
     ),

@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes: [string, number][] = [
     ["", 1],
     ["/salesforce", 0.8],
+    ["/generative-ai", 0.8],
     ["/salesforce/admin-support", 0.7],
     ["/salesforce/training", 0.7],
   ];
