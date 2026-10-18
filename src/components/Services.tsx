@@ -7,8 +7,8 @@ const services = [
       </svg>
     ),
     title: "AI Enablement",
-    description: "Most teams have tried ChatGPT and stalled. We find where AI actually earns its keep in your business, set it up properly, and get your team using it with confidence. Practical, not hype.",
-    tags: ["Claude", "Agents", "Workflows", "Training"],
+    description: "Most teams have tried ChatGPT and stalled. We find where AI actually earns its keep, set it up properly, and get your team using it — including the calls on what to build, what to buy, and which vendor is telling the truth.",
+    tags: ["Claude", "Agents", "Workflows", "AI roadmap", "Vendor eval"],
   },
   {
     icon: (
@@ -17,19 +17,19 @@ const services = [
       </svg>
     ),
     title: "AI-Assisted Development",
-    description: "We build software with AI in the loop: faster, leaner, and still engineered properly. Custom apps, internal tools, websites, and the AI features inside them.",
-    tags: ["Custom apps", "Internal tools", "Next.js", "LLM integration"],
+    description: "We build software with AI in the loop: faster, leaner, and still engineered properly, with automated tests so shipping isn't a gamble. Custom apps, internal tools, websites, and the AI features inside them.",
+    tags: ["Custom apps", "Internal tools", "Next.js", "Testing & QA"],
   },
   {
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zm3 10l3-4 3 4 2-2 3 4M8.5 9a1 1 0 100-2 1 1 0 000 2z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
       </svg>
     ),
-    title: "Generative Media",
-    description: "Image and video made with generative AI, for brand, product and campaign work. Including the pipeline to produce it repeatedly, not just a one-off.",
-    tags: ["Image", "Video", "Brand assets", "Pipelines"],
-    cta: { label: "See what we do", href: "/generative-ai" },
+    title: "Salesforce Solutions",
+    description: "Salesforce is powerful but easy to get tangled. We untangle it, build clean solutions that work, automate the tedious stuff, and bring AI into the CRM where it helps.",
+    tags: ["Salesforce", "Flows", "LWC", "Apex", "Agentforce"],
+    cta: { label: "Salesforce consulting", href: "/salesforce" },
   },
   {
     icon: (
@@ -44,32 +44,13 @@ const services = [
   {
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zm3 10l3-4 3 4 2-2 3 4M8.5 9a1 1 0 100-2 1 1 0 000 2z" />
       </svg>
     ),
-    title: "Salesforce Solutions",
-    description: "Salesforce is powerful but easy to get tangled. We untangle it, build clean solutions that work, automate the tedious stuff, and bring AI into the CRM where it helps rather than where the brochure says.",
-    tags: ["Salesforce", "Flows", "LWC", "Apex", "Agentforce"],
-  },
-  {
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-      </svg>
-    ),
-    title: "AI & Technical Strategy",
-    description: "Where does AI fit? What's worth building, what's worth buying, and which vendor is telling the truth? Clear thinking on the decisions that matter. Without the consulting overhead.",
-    tags: ["AI roadmap", "Architecture", "Review", "Vendor eval"],
-  },
-  {
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-      </svg>
-    ),
-    title: "Testing & QA",
-    description: "Automated tests and regression checks, so shipping stops being a gamble. Including Salesforce orgs ahead of each seasonal release.",
-    tags: ["Automation", "Regression", "E2E", "CI"],
+    title: "Generative Media",
+    description: "Image and video made with generative AI, for brand, product and campaign work. Including the pipeline to produce it repeatedly, not just a one-off.",
+    tags: ["Image", "Video", "Brand assets", "Pipelines"],
+    cta: { label: "See what we do", href: "/generative-ai" },
   },
   {
     icon: (
