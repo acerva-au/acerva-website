@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
+import Image from "next/image";
 import Link from "next/link";
 
 // Absolute, not bare "#anchors": these have to work from sub-pages too,
@@ -27,6 +28,7 @@ export default function Nav() {
 
   return (
     <header
+      data-scrolled={isScrolled}
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
       style={{
         backgroundColor: isScrolled ? "rgba(27, 58, 43, 0.9)" : "transparent",
@@ -36,12 +38,26 @@ export default function Nav() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link
-            href="/"
-            className="font-semibold text-base tracking-widest uppercase"
-            style={{ color: isScrolled ? "#f1f5f3" : "var(--text-primary)" }}
-          >
-            Acerva
+          <Link href="/" aria-label="Acerva home" className="flex items-center">
+            {/* Two cuts of the same wordmark; CSS picks one by theme and scroll
+                state, so there is no flash while the theme resolves. */}
+            <Image
+              src="/brand/wordmark-white.png"
+              alt="Acerva"
+              width={960}
+              height={129}
+              priority
+              className="nav-wordmark nav-wordmark--white"
+            />
+            <Image
+              src="/brand/wordmark-green.png"
+              alt=""
+              aria-hidden="true"
+              width={960}
+              height={129}
+              priority
+              className="nav-wordmark nav-wordmark--green"
+            />
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">

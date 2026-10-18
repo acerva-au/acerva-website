@@ -47,3 +47,18 @@ body {
   color: var(--text-primary);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Header wordmark. White reads on the dark theme and on the scrolled header
+   (which is always dark green); green reads on the light theme at rest. */
+.nav-wordmark {
+  height: 20px;
+  width: auto;
+  display: block;
+}
+.nav-wordmark--green { display: none; }
+
+html.light .nav-wordmark--white { display: none; }
+html.light .nav-wordmark--green { display: block; }
+
+html.light header[data-scrolled="true"] .nav-wordmark--white { display: block; }
+html.light header[data-scrolled="true"] .nav-wordmark--green { display: none; }
